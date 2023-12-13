@@ -5,8 +5,9 @@
 #create a virtualenv
 python -m venv .venv
 
-# append it to bash so every shell launches with it 
-echo 'source .venv/bin/activate' >> ~/.bashrc
+
+# append it to bash (if not there) so every shell launches with it 
+[[ $(tail -n1 ~/.bashrc) != 'source .venv/bin/activate' ]] && echo 'source .venv/bin/activate' >> ~/.bashrc
 
 # source virtualenv
 source .venv/bin/activate
