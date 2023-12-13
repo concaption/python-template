@@ -3,7 +3,7 @@
 ### Sets up python packages in for devcontainer.json
 
 #create a virtualenv
-python -m venv .venv
+python3 -m venv .venv
 
 
 # append it to bash (if not there) so every shell launches with it 
